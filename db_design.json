@@ -1,0 +1,89 @@
+{
+  "users": {
+    "userId": "String",
+    "name": "String",
+    "premiumStatus": "Boolean",
+    "songHistory": [
+      {
+        "songId": "String",
+        "lastPlayed": "Timestamp"
+      }
+    ],
+    "playlistHistory": [
+      {
+        "playlistId": "String",
+        "lastPlayed": "Timestamp"
+      }
+    ],
+    "likedSongIds": ["String"],
+    "usersPlaylists": [
+      {
+        "playlistId": "String",
+        "playlistName": "String",
+        "public": "Boolean",
+        "songs": [
+          {
+            "songId": "String",
+            "timeAdded": "Timestamp"
+          }
+        ]
+      }
+    ],
+    "forkedPlaylists": ["String"]
+  },
+  "artists": [
+    {
+      "artistId": "String",
+      "name": "String",
+      "followers": "Integer",
+      "monthlyListeners": "Integer",
+      "coverImageUrl": "String: url/image"
+    }
+  ],
+  "songs": {
+    "songId": "String",
+    "songTitle": "String",
+    "releasedTimestamp": "String",
+    "audioUrl": "String: url/audioFile",
+    "performedBy": "String",
+    "writtenBy": "String",
+    "producedBy": "String",
+    "source": "String",
+    "numberOfPlays": "Integer",
+    "artistId": "String",
+    "genres": [
+      {
+        "genreId": "String",
+        "thumbnailUrl": "String"
+      }
+    ],
+    "lyrics": [
+      {
+        "startTimestamp": "TimeStamp",
+        "endTimestamp": "TimeStamp",
+        "content": "String"
+      }
+    ],
+    "album": {
+      "albumId": "String"
+    },
+    "thumbnailUrl": "String"
+  },
+  "albums": {
+    "albumId": "String",
+    "artistId": "String",
+    "albumTitle": "String",
+    "releasedTime": "Timestamp",
+    "copyrightOwnership": "String",
+    "albumThumbnail": "String url/image",
+    "albumSongs": [
+      {
+        "songId": "String"
+      }
+    ]
+  },
+  "genres": {
+    "genreId": "String",
+    "genreName": "String"
+  }
+}
